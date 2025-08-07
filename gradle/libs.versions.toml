@@ -1,0 +1,32 @@
+metadata.format.version = "1.1"
+
+[versions]
+
+minestom = "2025.07.10b-1.21.7"
+polar = "1.14.2"
+logback = "1.5.18"
+lz4 = "1.8.0"
+luckperms = "5.4-SNAPSHOT"
+configurate = "3.7.2"
+pvp = "56a831b41c"
+
+# plugins
+shadow = "8.3.0"
+
+[libraries]
+
+minestom = { group = "net.minestom", name = "minestom", version.ref = "minestom" }
+luckperms = { group = "dev.lu15", name = "luckperms-minestom", version.ref = "luckperms" }
+configurate = { group = "org.spongepowered", name = "configurate-hocon", version.ref = "configurate" }
+polar = { group = "dev.hollowcube", name = "polar", version.ref = "polar" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+lz4 = { group = "org.lz4", name = "lz4-java", version.ref = "lz4" }
+pvp = { group = "com.github.TogAr2", name = "MinestomPvP", version.ref = "pvp" }
+
+[bundles]
+
+main = ["minestom", "luckperms", "configurate", "logback", "lz4", "polar", "pvp"]
+test = ["minestom", "luckperms", "configurate", "logback", "lz4", "polar", "pvp"]
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
