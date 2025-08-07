@@ -1,1 +1,26 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.hypera.dev/snapshots/" }
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.serble.net/snapshots/' }
+        maven { url "https://reposilite.atlasengine.ca/public" }
+        maven { url "https://repo.viaversion.com" }
+        maven {
+            name "hyperaSnapshots"
+            url "https://repo.hypera.dev/snapshots"
+        }
+        maven {
+            name "asordaPublic"
+            url "https://mvn.everbuild.org/public"
+        }
+        maven { url "https://repo.tikite.ch/releases" }
+        maven { url "https://repo.codemc.io/repository/maven-releases/" }
+        maven { url "https://repo.aikar.co/content/groups/aikar/" }
+    }
+}
+
 rootProject.name = 'server-api'
