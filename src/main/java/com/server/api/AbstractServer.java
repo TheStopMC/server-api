@@ -1,7 +1,6 @@
 package com.server.api;
 
 import com.server.api.config.ServerConfig;
-import com.server.api.managers.IManager;
 import com.server.api.maps.AbstractMap;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import net.minestom.server.MinecraftServer;
@@ -120,10 +119,4 @@ public abstract class AbstractServer {
         MinecraftServer.getInstanceManager().unregisterInstance(maps.remove(id));
         return maps.containsKey(id);
     }
-
-    public abstract IManager baltopManager();
-
-    public abstract IManager combatLogManager();
-
-    public abstract IManager cameraManager();
 }
